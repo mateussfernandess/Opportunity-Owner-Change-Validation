@@ -1,0 +1,4 @@
+Opportunity URN,Original Close Date,Opportunity Name,Account Name,Ult Parent Customer Urn,Ult Parent Name,Owner,Owner Employee ID,DC Owner,DC Owner: Manager,Rep Type,Region,Annualized Amount,Type,Booking Event Type
+10001,2024-05-12,Cloud Migration,Contoso,UP001,Contoso Corp,Alicia S.,EMP1001,Alice Smith,EMP2001,Direct,EMEA,10000,New,Booking
+10002,2024-06-10,Licensing Renewal,Fabrikam,UP002,Fabrikam Ltd,Robert J.,EMP1002,Bob Jones,EMP2002,Channel,AMER,20000,Renewal,Renewal
+10003,2024-07-15,Security Assessment,Northwind,UP003,Northwind Traders,Cara Lee,EMP1003,Cara Lee,EMP2003,Partner,EMEA,15000,Expansion,Booking
