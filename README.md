@@ -25,17 +25,19 @@ The final result is a clean, exportable CSV that shows both the original CRM sta
 
 ## 🗂 Folder Structure
 
-``Opportunity-Owner-Change-Validation/
-├── data/ # Synthetic input datasets
-│ ├── user_form_data.csv
-│ ├── crm_audit_data.csv
-│ └── previous_audit_data.csv
-├── notebooks/ # Main notebook with full workflow
-│ └── Owner_Change_Validation_Demo.ipynb
-├── output/ # Output generated from notebook
-│ └── final_result.csv
-├── requirements.txt # Required Python packages
-└── README.md # This file``
+```
+Opportunity-Owner-Change-Validation/
+├── data/                        # Synthetic input datasets
+│   ├── user_form_data.csv
+│   ├── crm_audit_data.csv
+│   └── previous_audit_data.csv
+├── notebooks/                  # Main notebook with full workflow
+│   └── Owner_Change_Validation_Demo.ipynb
+├── output/                     # Output generated from notebook
+│   └── final_result.csv
+├── requirements.txt            # Required Python packages
+└── README.md                   # This file
+```
 
 ---
 
