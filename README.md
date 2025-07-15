@@ -1,43 +1,68 @@
-# Opportunity Owner Change Validation Process (Demo with Synthetic Data)
+# 🧠 Opportunity Owner Change Validation Process
 
-**A demonstration project for validating opportunity owner changes using simulated Dynamics CRM data.**
+This project simulates a real-world data quality audit used to validate CRM opportunity ownership changes, based on Dynamics-style fields. It was designed to reflect enterprise logic typically used in Sales Ops or Business Intelligence teams, using synthetic data for safe portfolio sharing.
 
-## 🚩 What does this project do?
+---
 
-- Loads user-submitted "opportunity" data (simulating an **intake form** completed by Sales Reps requesting owner changes)
-- Loads CRM records (simulating audit snapshots from Dynamics CRM)
-- Loads previous audit results (e.g., prior month’s audit outcome)
-- Flags changes in ownership, region, rep type, etc.
-- Generates "Approval Status" (`Approved`, `Review`, `Adjust`) and communication guidance based on business rules
-- Outputs a clear CSV with both perspectives for every opportunity
+## 🚀 Project Summary
 
-## 🔎 How the Data is Used
+This pipeline helps Sales Operations teams validate change requests submitted via intake forms by comparing them against current CRM records. It flags discrepancies (e.g. change in Rep Type, Region, or Owner) and automatically generates an approval status and a communication message for the requester.
 
-- In a **real scenario**, both CRM audit data and previous months' audit data would be retrieved directly from the company database using SQL queries.
-- For sharing and demonstration purposes, these data sources are represented by simple CSV files in this repository.
-- **All data is synthetic.**
+The final result is a clean, exportable CSV that shows both the original CRM state and the requested changes — supporting review, compliance, and audit tracking.
 
-## 📂 Folder structure
+---
+
+## 📊 Skills Demonstrated
+
+- 🐍 Python (Pandas, Jupyter)
+- 🧪 Data validation and reconciliation
+- 🔄 Logic replication from SQL to Python
+- 📁 Modular project structure with reusable logic
+- ✅ Automated flagging & decision rules
+- 📦 Realistic CRM-style data structure (Dynamics)
+
+---
+
+## 🗂 Folder Structure
 
 Opportunity-Owner-Change-Validation/
-├── data/
-│   ├── user_form_data.csv
-│   ├── crm_audit_data.csv
-│   └── previous_audit_data.csv
-├── output/
-│   └── final_result.csv (generated when you run the notebook)
-├── notebooks/
-│   └── Owner_Change_Validation_Demo.ipynb
-└── README.md
+├── data/ # Synthetic input datasets
+│ ├── user_form_data.csv
+│ ├── crm_audit_data.csv
+│ └── previous_audit_data.csv
+├── notebooks/ # Main notebook with full workflow
+│ └── Owner_Change_Validation_Demo.ipynb
+├── output/ # Output generated from notebook
+│ └── final_result.csv
+├── requirements.txt # Required Python packages
+└── README.md # This file
 
-## 🚀 How to run
+---
 
-1. Clone/download this repo
-2. Open `notebooks/Owner_Change_Validation_Demo.ipynb` in Jupyter
-3. Run all cells to generate `/output/final_result.csv`
-4. Review the results
+## 🧪 How It Works
 
-## ⚠️ Disclaimer
+1. **Load Inputs**: Simulated form submission, CRM snapshot, and past audit output
+2. **Compare Fields**: Owner, Rep Type, Region, Quota Owner, Quota Manager
+3. **Generate Flags**:
+   - Owner Change?
+   - Region Change?
+   - QO Change? (Quota Owner)
+   - QO Manager Change?
+4. **Automated Logic**:
+   - Assign `Approval Status`: Approved / Review / Adjust
+   - Add `Communication Guidance` for the requester
+5. **Export**: All rows saved to `final_result.csv`
 
-> This project uses only synthetic data and standard Dynamics CRM field names.  
-> No proprietary, confidential, or real business data is included.
+---
+
+## 📎 Notes
+
+- This project uses **synthetic data only** and does **not** expose any confidential logic or internal tools.
+- In real scenarios, the CRM and audit data would be extracted via **SQL queries from internal databases** — in this version, they are replaced by CSVs for demonstration purposes.
+
+---
+
+## 📫 Contact
+
+Feel free to reach out if you’d like to know more about this workflow or how I’ve implemented similar systems in production environments.
+
