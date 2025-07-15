@@ -25,7 +25,7 @@ The final result is a clean, exportable CSV that shows both the original CRM sta
 
 ## 🗂 Folder Structure
 
-Opportunity-Owner-Change-Validation/
+``Opportunity-Owner-Change-Validation/
 ├── data/ # Synthetic input datasets
 │ ├── user_form_data.csv
 │ ├── crm_audit_data.csv
@@ -35,7 +35,7 @@ Opportunity-Owner-Change-Validation/
 ├── output/ # Output generated from notebook
 │ └── final_result.csv
 ├── requirements.txt # Required Python packages
-└── README.md # This file
+└── README.md # This file``
 
 ---
 
